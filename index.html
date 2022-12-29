@@ -54,8 +54,8 @@
 
           <a class="nav-link" id="main-link" href="#payments">📂 Payments</a>
           <div class="btn-group dropright">
-              <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#new-payment">🗂️ New Payment</a>
-              <div class="dropdown-menu">
+              <a class="nav-link ml-3 my-1 dropdown-toggle" id="new-payment" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ New Payment</a>
+              <div class="dropdown-menu" aria-labelledby="new-payment">
               <nav class="nav nav-pills flex-column">
                 <a class="nav-link ml-3 my-1" href="#insurance">🧾 Insurance</a>
                 <a class="nav-link ml-3 my-1" href="#patient">🧾 Patient</a>
@@ -63,6 +63,7 @@
               </nav>
               </div>
               </div>
+              
             <nav class="nav nav-pills flex-column">
               <a class="nav-link ml-3 my-1" href="#incomplete-payments">🗂️ Incomplete Payments</a>
               <a class="nav-link ml-3 my-1" href="#payment-manifest-queue">🗂️ Payment Manifest Queue</a>
@@ -72,8 +73,8 @@
               <a class="nav-link" id="main-link" href="#reports">📂 Reports</a>
                 <nav class="nav nav-pills flex-column">
                   <div class="btn-group dropright">
-                  <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#encounters">🗂️ Encounters</a>
-                  <div class="dropdown-menu">
+                  <a class="nav-link ml-3 my-1 dropdown-toggle" id="encounterss" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Encounters</a>
+                  <div class="dropdown-menu" aria-labelledby="encounterss">
                   <nav class="nav nav-pills flex-column">
                     <a class="nav-link ml-3 my-1" href="#encounter-stat">🔍 Encounter Stat</a>
                     <a class="nav-link ml-3 my-1" href="#encounter-search">🔍 Encounter Search</a>
@@ -81,8 +82,8 @@
                   </div>
                   </div>
                   <div class="btn-group dropright">
-                  <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#cpts">🗂️ CPTs</a>
-                  <div class="dropdown-menu">
+                  <a class="nav-link ml-3 my-1 dropdown-toggle" id="cpts" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ CPTs</a>
+                  <div class="dropdown-menu" aria-labelledby="cpts">
                   <nav class="nav nav-pills flex-column">
                     <a class="nav-link ml-3 my-1" href="#cpt-stat">🔍 CPT Stat</a>
                     <a class="nav-link ml-3 my-1" href="#cpt-search">🔍 CPT Search</a>
@@ -91,8 +92,8 @@
               </div>
 
                   <div class="btn-group dropright">
-                    <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#timeline-events">🗂️ Timeline Events</a>
-                    <div class="dropdown-menu">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="timeline-events" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Timeline Events</a>
+                    <div class="dropdown-menu" aria-labelledby="timeline-events">
                       <nav class="nav nav-pills flex-column">
                         <a class="nav-link ml-3 my-1" href="#event-stats">🔍 Event Stats</a>
                         <a class="nav-link ml-3 my-1" href="#event-search">🔍 Event Search</a>
@@ -102,8 +103,8 @@
                   </div>
 
                   <div class="btn-group dropright">
-                    <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#invoices">🗂️ Invoices</a>
-                    <div class="dropdown-menu">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="invoices" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Invoices</a>
+                    <div class="dropdown-menu" aria-labelledby="invoices">
                       <nav class="nav nav-pills flex-column">
                         <a class="nav-link ml-3 my-1" href="#client-invoice-search">🔍 Client Invoice Search</a>
                         <a class="nav-link ml-3 my-1" href="#patient-invoice-search">🔍 Patient Invoice Search</a>
@@ -113,8 +114,8 @@
                   </div>
 
                   <div class="btn-group dropright">
-                    <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#transactions">🗂️ Transactions</a>
-                    <div class="dropdown-menu">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="transactions" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Transactions</a>
+                    <div class="dropdown-menu" aria-labelledby="transactions">
                       <nav class="nav nav-pills flex-column">
                         <a class="nav-link ml-3 my-1" href="#transaction-stat">🔍 Transaction Stat</a>
                         <a class="nav-link ml-3 my-1" href="#transaction-search">🔍 Transaction Search</a>
@@ -123,13 +124,13 @@
                   </div>
                   
                   <div class="btn-group dropright">
-                    <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#logs">🗂️ Logs</a>
-                    <div class="dropdown-menu">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="logs" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Logs</a>
+                    <div class="dropdown-menu" aria-labelledby="logs">
                       <nav class="nav nav-pills flex-column">
                         <a class="nav-link ml-3 my-1" href="#transmission-log">🗂️ X12 Transmission Log</a>
                       </nav>
                     </div>
-                  </div>
+                  </div> 
                 </nav>
                 <a class="nav-link" id="main-link" href="#workflow-action-queue">🔍 Workflow Action Queue</a>
 
@@ -138,43 +139,279 @@
 
 <div data-spy="scroll" id="scroller" data-target="#navbar-example3" data-offset="0">
 
-<div class="card">
-  <div class="card-body">
-    <h4 class="card-title" id="encounter">📂 Encounters</h4>
-    <p>...</p>
-    <h5 class="card-subtitle mb-2" id="search">🔍 Search</h5>
-    <p>...</p>
+  <h4 class="card-title" id="encounter">📂 Encounters</h4>
+  <div class="container-lg">
 
-    <h5 class="card-subtitle mb-2 dropdown-toggle" id="demographics" data-toggle="collapse" href="#demo-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Demographics</h5>
-    <div class="collapse" id="demo-workflow">
-      <div class="card card-body">
-        <li>Perform an address verification in the <strong>Demographics Tab</strong> on an address field:</li>
-        <li>“Click” on the <strong>WP</strong> icon or  ℹ️ icon to initiate the address verification function</li>
-        <li>“Click” on <strong>Accept New Address</strong> <strong> - Note:</strong> the ✅ icon in the right-hand corner of the address data field:</li>
-        <li>“Real-time” indication appears as the ✅ icon confirming address verification has been completed & validated</li>     
-      </div>
+    <div class="card card-body">
+      <h5 class="card-subtitle mb-2" id="search">🔍 Search</h5>
       <div class="card-body">
-        <img src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672291405/add_payer_address_verf_gdjsu6.gif">
+        <p><strong>Encounters 🔍 Search</strong></p>
+        <p>Features three of the following complementing data-oriented tabs:</p>
+        <h6 id="list">1 - Encounter:</h6>
+        <li id="listing">Helpful in locating virtually any billing encounter recorded in the system</li>
+        <li id="listing">Data filters & fields are geared more towards the various data entities typically present in billing encounters</li>
+        <li id="listing">Users are able to Payment Source Info to locate encounters</li>
+        <div class="card-body" id="gif-workflow">
+          <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672305481/encounter_search_uaeasm.gif">
+        </div>
+        <h6 id="list">2 - Workflow:</h6>
+        <li id="listing">Utilized to locate encounters going to the various workflows present in the platform</li>
+        <li id="listing">Features a unique Queue data filter to narrow results based on a workflow queue</li>
+        <li id="listing">The ability to isolate search results further based on Flags & Status</li>
+        <div class="card=body" id="gif-workflow">
+          <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264688/Confluence__software_-Logo.wine_anmefq.png">
+        </div>
+        <h6 id="list">3 - LIS:</h6>
+        <li id="listing">Important to validate the accuracy based on the ordered tests & other provider controlled logistics</li>
+        <li id="listing">Contains numerous unqiue exclusion filters to narrow search results even more</li>
+        <li id="listing">Has a powerful combination of drop-down data filters connected to lab testing, results & CPT codes</li>
+        <div class="card=body" id="gif-workflow">
+          <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264688/Confluence__software_-Logo.wine_anmefq.png">
+        </div>
+      </div>
+      </div>
+
+      <div class="card card-body">
+        <h5 class="card-subtitle mb-2 dropdown-toggle" id="demographics" data-toggle="collapse" href="#demo-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Demographics</h5>
+        <div class="collapse" id="demo-workflow">
+          <div class="card card-body">
+            <ul>Performing An Address Verification in the <strong>Demographics Tab</strong> on an address field:</ul>
+            <li>“Click” on the <strong>WP</strong> icon or  ℹ️ icon to initiate the address verification function</li>
+            <li>“Click” on <strong>Accept New Address</strong> <strong> - Note:</strong> the ✅ icon in the right-hand corner of the address data field:</li>
+            <li>“Real-time” indication appears as the ✅ icon confirming address verification has been completed & validated</li>     
+          </div>
+          <div class="container" id="gif-workflow">
+            <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672291405/add_payer_address_verf_gdjsu6.gif">
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-body">
+        <h5 class="card-subtitle mb-2 dropdown-toggle" id="coding" data-toggle="collapse" href="#coding-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Coding</h5>
+        <div class="collapse" id="coding-workflow">
+          <div class="card card-body">
+            <p><strong>Coding Workflow</strong></p>
+          </div>
+          <div class="card=body" id="gif-workflow">
+            <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264688/Confluence__software_-Logo.wine_anmefq.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-body">
+        <h5 class="card-subtitle mb-2 dropdown-toggle" id="review" data-toggle="collapse" href="#review-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Review</h5>
+        <div class="collapse" id="review-workflow">
+          <div class="card card-body">
+            <p><strong>Review Workflow</strong></p>
+          </div>
+          <div class="card=body" id="gif-workflow">
+            <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264688/Confluence__software_-Logo.wine_anmefq.png">
+          </div>
+        </div>
+
+  </div>
+
+  <h4 class="card-title" id="insurance-claims">📂 Insurance Claims</h4>
+    <p><strong>Guide: Insurance Claims Workflow</strong></p>
+<div class="container-lg">
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2 dropdown-toggle" id="rejections" data-toggle="collapse" href="#rejections-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Rejections</h5>
+    <div class="collapse" id="rejections-workflow">
+      <div class="card card-body">
+        <p><strong>Rejections Workflow</strong></p>
+      </div>
+      <div class="card=body" id="gif-workflow">
+        <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264688/Confluence__software_-Logo.wine_anmefq.png">
       </div>
     </div>
-
-    <h5 class="card-subtitle mb-2" id="coding">🗂️ Coding</h5>
-    <p>...</p>
-    <h5 class="card-subtitle mb-2" id="review">🗂️ Review</h5>
-    <p>...</p>
   </div>
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2 dropdown-toggle" id="denials" data-toggle="collapse" href="#denials-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Denials</h5>
+    <div class="collapse" id="denials-workflow">
+      <div class="card card-body">
+        <p><strong>Denials Workflow</strong></p>
+      </div>
+      <div class="card-body">
+        <img src="">
+      </div>
+    </div>
+  </div>
+    
+  <div class="card card-body">
+  <h5 class="card-subtitle mb-2 dropdown-toggle" id="insurance-review" data-toggle="collapse" href="#insurance-review-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Insurance Review</h5>
+  <div class="collapse" id="insurance-review-workflow">
+    <div class="card card-body">
+      <p><strong>Insurance Review Workflow</strong></p>
+      <p>Guide: Primary Claim Resubmission</p>
+          <li> 
+            Select the <strong>Account</strong> corresponding to the claim in the <strong>Charges</strong> section via “right-clicking” & selecting the 🔄 <strong>Re-submit Primary Claim</strong> option
+          </li>
+          <li>
+            A separate 🖥️ <strong>Create Insurance Claim</strong> window appears displaying data fields corresponding to the claim re-submission:
+          </li>
+      
+          <li>
+            <strong>CLM #</strong>
+          </li>
+
+          <li>
+            <strong>Payer</strong>
+          </li>
+
+          <li>
+            <strong>Sequence</strong>
+          </li>
+
+          <li>
+            <strong>Next Payer</strong>
+          </li>
+          
+          <li>
+            <strong>Type</strong>
+          </li>
+          <li>
+            <strong>Frequency Code</strong>
+          </li>
+          <li>
+            <strong>Indicator Code</strong>
+          </li>
+          <li>
+            <strong>Transaction Code</strong>
+          </li>
+          <li>
+            “Click” on the 🔍 <strong>Preview CMS 1500</strong> button to view indicated form
+          </li>
+          <li>
+            “Click” on the 🔍 <strong>Preview 837</strong> button to view indicated transmission data
+          </li>
+          <li>
+            After “clicking” on the ✅ <strong>F1: Confirm</strong> button new data row appears w/in the <strong>Timeline Tab</strong> including the following:
+          </li>
+          <li>
+            <strong>Post Date</strong>
+          </li>
+          <li>
+            <strong>Event</strong>
+          </li> 
+            <li>
+              <strong>Status</strong>
+            </li>
+            <li>
+              <strong>Payer</strong>
+            </li>
+            <li>
+              <strong>CLM / INV #</strong>
+            </li>
+            <li>
+              <strong>Description</strong>
+            </li>
+            <li>
+              <strong>Balance</strong>
+            </li>
+            <li>
+              Display processed data in the <strong>Timeline Tab</strong> via “checking-off” the <strong>Show Effective ⬜</strong> box
+            </li>
+            <li>
+              Current re-submission linked data rows NO longer appear in the <strong>Timeline Tab</strong>
+            </li>
+    </div>
+    <div class="card-body" id="gif-workflow">
+      <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672296397/primary_resubmit_ins_review_ubp44p.gif">
+    </div>
+  </div>
+</div>
+   
+</div>
+
+<h4 class="card-title" id="insurance-claims">📂 Payments</h4>
+<p><strong>Guide: Payment Events Workflow</strong></p>
+<div class="container-lg">
+ 
+    <div class="card card-body">
+    <h5 class="card-subtitle mb-2 dropdown-toggle" id="insurance-review" data-toggle="collapse" href="#new-payments" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ New Payment</h5>
+    <div class="collapse" id="new-payments">
+
+        <div class="card-body" id="insurance">
+          <h5 class="card-subtitle mb-2">🧾 Insurance</h5>
+          <div class="card-body">
+            <img src="">
+          </div>
+        </div>
+
+        <div class="card-body" id="patient">
+          <h5 class="card-subtitle mb-2">🧾 Patient</h5>
+          <div class="card-body">
+            <img src="">
+          </div>
+        </div>
+
+        <div class="card-body" id="client">
+          <h5 class="card-subtitle mb-2">🧾 Client</h5>
+          <div class="card-body">
+            <img src="">
+          </div>
+        </div>
+        </div>
+        </div>
+       
+    <h5 class="card-subtitle mb-2" id="incomplete-payments">🗂️ Incomplete Payments</h5>
+    <p>...</p>
+    <h5 class="card-subtitle mb-2" id="payment-manifest-queue">🗂️ Payment Manifest Queue</h5>
+    <p>...</p>
+    <h5 class="card-subtitle mb-2" id="payment-manifest-log">🗂️ Payment Manifest Log</h5>
+    <p>...</p>
+
 </div>
 
 <div class="card">
   <div class="card-body">
-    <h4 class="card-title" id="insurance-claims">📂 Insurance Claims</h4>
+    <h4 class="card-title" id="reports">📂 Reports</h4>
     <p>...</p>
-    <h5 class="card-subtitle mb-2" id="rejections">🗂️ Rejections</h5>
+    <h5 class="card-subtitle mb-2 dropdown-toggle" data-toggle="collapse" href="#encounter" role="button" aria-expanded="false" aria-controls="collapseExample" id="encounters">🗂️ Encounters</h5>
+    <div class="collapse" id="encounter">
+        <div class="card-body" id="encounter-stat">
+          <h5 class="card-subtitle mb-2">🔍 Encounter Stat</h5>
+          <div class="card-body">
+            <img src="">
+          </div>
+        </div>
+
+        <div class="card-body" id="encounter-search">
+          <h5 class="card-subtitle mb-2">🔍 Encounter Search</h5>
+          <div class="card-body">
+            <img src="">
+          </div>
+        </div>
+        </div>
+
+    <h5 class="card-subtitle mb-2 dropdown-toggle" data-toggle="collapse" href="#cpt" role="button" aria-expanded="false" aria-controls="collapseExample" id="cpts">🗂️ CPTs</h5>
+    <div class="collapse" id="cpt">
+        <div class="card-body" id="cpt-stat">
+          <h5 class="card-subtitle mb-2">🔍 CPT Stat</h5>
+          <div class="card-body">
+            <img src="">
+          </div>
+        </div>
+
+        <div class="card-body" id="cpt-search">
+          <h5 class="card-subtitle mb-2">🔍 CPT Search</h5>
+          <div class="card-body">
+            <img src="">
+          </div>
+        </div>
+        </div>
+
+    <h5 class="card-subtitle mb-2" id="timeline-events">🗂️ Timeline Events</h5>
     <p>...</p>
-    <h5 class="card-subtitle mb-2" id="denials">🗂️ Denials</h5>
+    <h5 class="card-subtitle mb-2" id="invoices">🗂️ Invoices</h5>
     <p>...</p>
-    <h5 class="card-subtitle mb-2" id="insurance-review">🗂️ Insurance Review</h5>
+    <h5 class="card-subtitle mb-2" id="transactions">🗂️ Transactions</h5>
     <p>...</p>
+    <h5 class="card-subtitle mb-2" id="logs">🗂️ Logs</h5>
+    <p>...</p>
+    <h4 class="card-title" id="workflow-action-queue">🔍 Workflow Action Queue</h4>
   </div>
 </div>
 

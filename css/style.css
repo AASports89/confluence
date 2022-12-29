@@ -82,3 +82,19 @@ body {
 #scroller {
   padding-top: 2%;
 }
+
+#gif-workflow {
+  border: solid 1.5px black;
+}
+
+#gif {
+  width: 100%;
+}
+
+#list {
+  padding-left: 1%;
+}
+
+#listing {
+  padding-left: 7.5%;
+}
