@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+#float-left {
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+:root {
+  --royal: #0563c1
+}
+
+#nav-bar {
+  background-image: url("https://res.cloudinary.com/dhqsixgmo/image/upload/v1672266559/confluence-logo_hoaoba.png");
+}
+
+#conf-link:hover {
+ background-color: azure;
+ cursor: pointer;
+}
+
+#conf-logo:hover {
+  cursor: pointer;
+  border: 1px solid rgb(1, 1, 80);
+}
+#magnify {
+  color: grey;
+}
+
+#search-button {
+  background-color: rgb(1, 1, 80);
+  border: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 38px;
+}
+
+#magnify:hover {
+  cursor: pointer;
+  color: rgb(52, 51, 51);
+}
+
+#search-bar {
+  background-color: rgb(1, 1, 80);
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#rcm-guide {
+  font-size: 175%;
+  color: rgb(134, 130, 130);
+  vertical-align: middle;
+  margin-bottom: 3%;
+  padding: 2%;
+}
+
+#nav-menu {
+  margin-top: 2%;
+}
+
+#rcm-guide:hover {
+  cursor: pointer;
+  background-image: linear-gradient(rgb(169, 186, 247) 0%, rgb(6, 6, 195) 100%);
+  border: none;
+  padding: 2%;
+  border-radius: 0.25em;
+  color: whitesmoke;
+}
+
+#main-link {
+  font-size: 125%;
+}
+
+#scroller {
+  padding-top: 2%;
+}

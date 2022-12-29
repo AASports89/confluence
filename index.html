@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>🌐 Confluence</title>
+</head>
+
+<body data-spy="scroll" data-target="#float-left">
+
+<header id="nav-header">
+  <nav class="navbar navbar-light" id="nav-bar">
+    <a class="navbar-brand" href="#">
+      <img id="conf-link" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672266802/img_522985_vybzoz.png" width="40" height="40" alt="Confluence-Link" loading="lazy">
+      <img id="conf-logo" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264041/confluence-logo_x2rqop.png" width="200" height="60" alt="Confluence" loading="lazy">
+    </a>
+    <form class="form-inline">
+      <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit"><i class="fa-solid fa-magnifying-glass" id="magnify"></i></button>
+      <input id="search-bar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </nav>
+</header>
+
+<main>
+
+<div class="float-left" id="float-left">
+
+  <nav id="navbar-example3" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#" id="rcm-guide">      
+      <img src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1666484175/public/images/ligologo_ehatzh.png" width="125" height="35" alt="LigoLab" loading="lazy">
+        RCM Guide
+    </a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link" id="main-link" href="#encounter">📂 Encounters</a>
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1" href="#search">🔍 Search</a>
+                <a class="nav-link ml-3 my-1" href="#demographics">🗂️ Demographics</a>
+                <a class="nav-link ml-3 my-1" href="#coding">🗂️ Coding</a>
+                <a class="nav-link ml-3 my-1" href="#review">🗂️ Review</a>
+            </nav>
+
+          <a class="nav-link" id="main-link" href="#insurance-claims">📂 Insurance Claims</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#rejections">🗂️ Rejections</a>
+              <a class="nav-link ml-3 my-1" href="#denials">🗂️ Denials</a>
+              <a class="nav-link ml-3 my-1" href="#insurance-review">🗂️ Insurance Review</a>
+            </nav>
+
+          <a class="nav-link" id="main-link" href="#payments">📂 Payments</a>
+          <div class="btn-group dropright">
+              <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#new-payment">🗂️ New Payment</a>
+              <div class="dropdown-menu">
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1" href="#insurance">🧾 Insurance</a>
+                <a class="nav-link ml-3 my-1" href="#patient">🧾 Patient</a>
+                <a class="nav-link ml-3 my-1" href="#client">🧾 Client</a>
+              </nav>
+              </div>
+              </div>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#incomplete-payments">🗂️ Incomplete Payments</a>
+              <a class="nav-link ml-3 my-1" href="#payment-manifest-queue">🗂️ Payment Manifest Queue</a>
+              <a class="nav-link ml-3 my-1" href="#payment-manifest-log">🗂️ Payment Manifest Log</a>
+            </nav>
+
+              <a class="nav-link" id="main-link" href="#reports">📂 Reports</a>
+                <nav class="nav nav-pills flex-column">
+                  <div class="btn-group dropright">
+                  <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#encounters">🗂️ Encounters</a>
+                  <div class="dropdown-menu">
+                  <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ml-3 my-1" href="#encounter-stat">🔍 Encounter Stat</a>
+                    <a class="nav-link ml-3 my-1" href="#encounter-search">🔍 Encounter Search</a>
+                  </nav>
+                  </div>
+                  </div>
+                  <div class="btn-group dropright">
+                  <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#cpts">🗂️ CPTs</a>
+                  <div class="dropdown-menu">
+                  <nav class="nav nav-pills flex-column">
+                    <a class="nav-link ml-3 my-1" href="#cpt-stat">🔍 CPT Stat</a>
+                    <a class="nav-link ml-3 my-1" href="#cpt-search">🔍 CPT Search</a>
+                  </nav>
+                </div>
+              </div>
+
+                  <div class="btn-group dropright">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#timeline-events">🗂️ Timeline Events</a>
+                    <div class="dropdown-menu">
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#event-stats">🔍 Event Stats</a>
+                        <a class="nav-link ml-3 my-1" href="#event-search">🔍 Event Search</a>
+                        <a class="nav-link ml-3 my-1" href="#event-detail-search">🔍 Event Detail Search</a>
+                      </nav>
+                    </div>
+                  </div>
+
+                  <div class="btn-group dropright">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#invoices">🗂️ Invoices</a>
+                    <div class="dropdown-menu">
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#client-invoice-search">🔍 Client Invoice Search</a>
+                        <a class="nav-link ml-3 my-1" href="#patient-invoice-search">🔍 Patient Invoice Search</a>
+                        <a class="nav-link ml-3 my-1" href="#patient-statement-search">🔍 Patient Statement Search</a>
+                      </nav>
+                    </div>
+                  </div>
+
+                  <div class="btn-group dropright">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#transactions">🗂️ Transactions</a>
+                    <div class="dropdown-menu">
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#transaction-stat">🔍 Transaction Stat</a>
+                        <a class="nav-link ml-3 my-1" href="#transaction-search">🔍 Transaction Search</a>
+                      </nav>
+                    </div>
+                  </div>
+                  
+                  <div class="btn-group dropright">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#logs">🗂️ Logs</a>
+                    <div class="dropdown-menu">
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" href="#transmission-log">🗂️ X12 Transmission Log</a>
+                      </nav>
+                    </div>
+                  </div>
+                </nav>
+                <a class="nav-link" id="main-link" href="#workflow-action-queue">🔍 Workflow Action Queue</a>
+
+      </nav>
+</div>
+
+<div data-spy="scroll" id="scroller" data-target="#navbar-example3" data-offset="0">
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title" id="encounter">📂 Encounters</h4>
+    <p>...</p>
+    <h5 class="card-subtitle mb-2" id="search">🔍 Search</h5>
+    <p>...</p>
+
+    <h5 class="card-subtitle mb-2 dropdown-toggle" id="demographics" data-toggle="collapse" href="#demo-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Demographics</h5>
+    <div class="collapse" id="demo-workflow">
+      <div class="card card-body">
+        <li>Perform an address verification in the <strong>Demographics Tab</strong> on an address field:</li>
+        <li>“Click” on the <strong>WP</strong> icon or  ℹ️ icon to initiate the address verification function</li>
+        <li>“Click” on <strong>Accept New Address</strong> <strong> - Note:</strong> the ✅ icon in the right-hand corner of the address data field:</li>
+        <li>“Real-time” indication appears as the ✅ icon confirming address verification has been completed & validated</li>     
+      </div>
+      <div class="card-body">
+        <img src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672291405/add_payer_address_verf_gdjsu6.gif">
+      </div>
+    </div>
+
+    <h5 class="card-subtitle mb-2" id="coding">🗂️ Coding</h5>
+    <p>...</p>
+    <h5 class="card-subtitle mb-2" id="review">🗂️ Review</h5>
+    <p>...</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title" id="insurance-claims">📂 Insurance Claims</h4>
+    <p>...</p>
+    <h5 class="card-subtitle mb-2" id="rejections">🗂️ Rejections</h5>
+    <p>...</p>
+    <h5 class="card-subtitle mb-2" id="denials">🗂️ Denials</h5>
+    <p>...</p>
+    <h5 class="card-subtitle mb-2" id="insurance-review">🗂️ Insurance Review</h5>
+    <p>...</p>
+  </div>
+</div>
+
+</div>
+  
+  </div><br>     
+  </main>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>
