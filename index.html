@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
-  <title>🌐 Confluence</title>
+  <title>Confluence</title>
 </head>
 
 <body data-spy="scroll" data-target="#float-left">
 
 <header id="nav-header">
   <nav class="navbar navbar-light" id="nav-bar">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="https://support.ligolab.com:8090/pages/viewpage.action?spaceKey=LG2020&title=LigoLab+Guide+for+RCM">
       <img id="conf-link" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672266802/img_522985_vybzoz.png" width="40" height="40" alt="Confluence-Link" loading="lazy">
       <img id="conf-logo" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264041/confluence-logo_x2rqop.png" width="200" height="60" alt="Confluence" loading="lazy">
     </a>
@@ -31,137 +31,175 @@
 
 <div class="float-left" id="float-left">
 
-  <nav id="navbar-example3" class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#" id="rcm-guide">      
-      <img src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1666484175/public/images/ligologo_ehatzh.png" width="125" height="35" alt="LigoLab" loading="lazy">
-        RCM Guide
+  <nav id="rcm-guide-navbar" class="navbar navbar-light">
+    <a class="navbar-brand dropdown-toggle" id="rcm-guide" data-toggle="collapse" href="#guide" role="button" aria-expanded="false" aria-controls="guide">
+      💰 RCM Workflow Guide
     </a>
-        <nav class="nav nav-pills flex-column">
-          <a class="nav-link" id="main-link" href="#encounter">📂 Encounters</a>
-            <nav class="nav nav-pills flex-column">
-                <a class="nav-link ml-3 my-1" href="#search">🔍 Search</a>
-                <a class="nav-link ml-3 my-1" href="#demographics">🗂️ Demographics</a>
-                <a class="nav-link ml-3 my-1" href="#coding">🗂️ Coding</a>
-                <a class="nav-link ml-3 my-1" href="#review">🗂️ Review</a>
-            </nav>
 
-          <a class="nav-link" id="main-link" href="#insurance-claims">📂 Insurance Claims</a>
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link ml-3 my-1" href="#rejections">🗂️ Rejections</a>
-              <a class="nav-link ml-3 my-1" href="#denials">🗂️ Denials</a>
-              <a class="nav-link ml-3 my-1" href="#insurance-review">🗂️ Insurance Review</a>
-            </nav>
+<div class="collapse" id="guide">
 
-          <a class="nav-link" id="main-link" href="#payments">📂 Payments</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#encounters" role="button" aria-expanded="false" aria-controls="encounters">📂 Encounters</a>
+        <div class="collapse" id="encounters">
+          <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" id="sub-link" href="#search-encounters">🔍 Search</a>
+              <a class="nav-link ml-3 my-1" id="sub-link" href="#demographics">🗂️ Demographics</a>
+              <a class="nav-link ml-3 my-1" id="sub-link" href="#coding">🗂️ Coding</a>
+              <a class="nav-link ml-3 my-1" id="sub-link" href="#review">🗂️ Review</a>
+          </nav>
+        </div>
+  
+        <a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#insurance-claims" role="button" aria-expanded="false" aria-controls="insurance-claims">📂 Insurance Claims</a>
+        <div class="collapse" id="insurance-claims">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ml-3 my-1" id="sub-link" href="#rejections">🗂️ Rejections</a>
+            <a class="nav-link ml-3 my-1" id="sub-link" href="#denials">🗂️ Denials</a>
+            <a class="nav-link ml-3 my-1" id="sub-link" href="#insurance-review">🗂️ Insurance Review</a>
+          </nav>
+        </div>
+            
+        <a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#payments" role="button" aria-expanded="false" aria-controls="payments">📂 Payments</a>
+        <div class="collapse" id="payments">
           <div class="btn-group dropright">
-              <a class="nav-link ml-3 my-1 dropdown-toggle" id="new-payment" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ New Payment</a>
+            <a class="nav-link ml-3 my-1 dropdown-toggle" id="new-payment" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ New Payment</a>
               <div class="dropdown-menu" aria-labelledby="new-payment">
-              <nav class="nav nav-pills flex-column">
-                <a class="nav-link ml-3 my-1" href="#insurance">🧾 Insurance</a>
-                <a class="nav-link ml-3 my-1" href="#patient">🧾 Patient</a>
-                <a class="nav-link ml-3 my-1" href="#client">🧾 Client</a>
-              </nav>
-              </div>
-              </div>
-              
-            <nav class="nav nav-pills flex-column">
-              <a class="nav-link ml-3 my-1" href="#incomplete-payments">🗂️ Incomplete Payments</a>
-              <a class="nav-link ml-3 my-1" href="#payment-manifest-queue">🗂️ Payment Manifest Queue</a>
-              <a class="nav-link ml-3 my-1" href="#payment-manifest-log">🗂️ Payment Manifest Log</a>
-            </nav>
-
-              <a class="nav-link" id="main-link" href="#reports">📂 Reports</a>
                 <nav class="nav nav-pills flex-column">
-                  <div class="btn-group dropright">
-                  <a class="nav-link ml-3 my-1 dropdown-toggle" id="encounterss" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Encounters</a>
-                  <div class="dropdown-menu" aria-labelledby="encounterss">
-                  <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ml-3 my-1" href="#encounter-stat">🔍 Encounter Stat</a>
-                    <a class="nav-link ml-3 my-1" href="#encounter-search">🔍 Encounter Search</a>
-                  </nav>
-                  </div>
-                  </div>
-                  <div class="btn-group dropright">
-                  <a class="nav-link ml-3 my-1 dropdown-toggle" id="cpts" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ CPTs</a>
-                  <div class="dropdown-menu" aria-labelledby="cpts">
-                  <nav class="nav nav-pills flex-column">
-                    <a class="nav-link ml-3 my-1" href="#cpt-stat">🔍 CPT Stat</a>
-                    <a class="nav-link ml-3 my-1" href="#cpt-search">🔍 CPT Search</a>
-                  </nav>
-                </div>
-              </div>
-
-                  <div class="btn-group dropright">
-                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="timeline-events" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Timeline Events</a>
-                    <div class="dropdown-menu" aria-labelledby="timeline-events">
-                      <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ml-3 my-1" href="#event-stats">🔍 Event Stats</a>
-                        <a class="nav-link ml-3 my-1" href="#event-search">🔍 Event Search</a>
-                        <a class="nav-link ml-3 my-1" href="#event-detail-search">🔍 Event Detail Search</a>
-                      </nav>
-                    </div>
-                  </div>
-
-                  <div class="btn-group dropright">
-                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="invoices" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Invoices</a>
-                    <div class="dropdown-menu" aria-labelledby="invoices">
-                      <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ml-3 my-1" href="#client-invoice-search">🔍 Client Invoice Search</a>
-                        <a class="nav-link ml-3 my-1" href="#patient-invoice-search">🔍 Patient Invoice Search</a>
-                        <a class="nav-link ml-3 my-1" href="#patient-statement-search">🔍 Patient Statement Search</a>
-                      </nav>
-                    </div>
-                  </div>
-
-                  <div class="btn-group dropright">
-                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="transactions" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Transactions</a>
-                    <div class="dropdown-menu" aria-labelledby="transactions">
-                      <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ml-3 my-1" href="#transaction-stat">🔍 Transaction Stat</a>
-                        <a class="nav-link ml-3 my-1" href="#transaction-search">🔍 Transaction Search</a>
-                      </nav>
-                    </div>
-                  </div>
-                  
-                  <div class="btn-group dropright">
-                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="logs" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Logs</a>
-                    <div class="dropdown-menu" aria-labelledby="logs">
-                      <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ml-3 my-1" href="#transmission-log">🗂️ X12 Transmission Log</a>
-                      </nav>
-                    </div>
-                  </div> 
+                  <a class="nav-link ml-3 my-1" id="sub-link" href="#insurance">🧾 Insurance</a>
+                  <a class="nav-link ml-3 my-1" id="sub-link" href="#patient">🧾 Patient</a>
+                  <a class="nav-link ml-3 my-1" id="sub-link" href="#client">🧾 Client</a>
                 </nav>
-                <a class="nav-link" id="main-link" href="#workflow-action-queue">🔍 Workflow Action Queue</a>
+              </div>
+              </div>
+                
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ml-3 my-1" href="#incomplete-payments">🗂️ Incomplete Payments</a>
+                <a class="nav-link ml-3 my-1" href="#payment-manifest-queue">🗂️ Payment Manifest Queue</a>
+                <a class="nav-link ml-3 my-1" href="#payment-manifest-log">🗂️ Payment Manifest Log</a>
+              </nav>
+            </div>
+  
+                <a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#reports" role="button" aria-expanded="false" aria-controls="reports">📂 Reports</a>
+                <div class="collapse" id="reports">
+                  <nav class="nav nav-pills flex-column">
+                    <div class="btn-group dropright">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="encounterss" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Encounters</a>
+                    <div class="dropdown-menu" aria-labelledby="encounterss">
+                    <nav class="nav nav-pills flex-column">
+                      <a class="nav-link ml-3 my-1" id="sub-link" href="#encounter-stat">🔍 Encounter Stat</a>
+                      <a class="nav-link ml-3 my-1" id="sub-link" href="#encounter-search">🔍 Encounter Search</a>
+                    </nav>
+                    </div>
+                    </div>
+                    <div class="btn-group dropright">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="cpts" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ CPTs</a>
+                    <div class="dropdown-menu" aria-labelledby="cpts">
+                    <nav class="nav nav-pills flex-column">
+                      <a class="nav-link ml-3 my-1" id="sub-link" href="#cpt-stat">🔍 CPT Stat</a>
+                      <a class="nav-link ml-3 my-1" id="sub-link" href="#cpt-search">🔍 CPT Search</a>
+                    </nav>
+                  </div>
+                </div>
+  
+                    <div class="btn-group dropright">
+                      <a class="nav-link ml-3 my-1 dropdown-toggle" id="timeline-events" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Timeline Events</a>
+                      <div class="dropdown-menu" aria-labelledby="timeline-events">
+                        <nav class="nav nav-pills flex-column">
+                          <a class="nav-link ml-3 my-1" id="sub-link" href="#event-stats">🔍 Event Stats</a>
+                          <a class="nav-link ml-3 my-1" id="sub-link" href="#event-search">🔍 Event Search</a>
+                          <a class="nav-link ml-3 my-1" id="sub-link" href="#event-detail-search">🔍 Event Detail Search</a>
+                        </nav>
+                      </div>
+                    </div>
+  
+                    <div class="btn-group dropright">
+                      <a class="nav-link ml-3 my-1 dropdown-toggle" id="invoices" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Invoices</a>
+                      <div class="dropdown-menu" aria-labelledby="invoices">
+                        <nav class="nav nav-pills flex-column">
+                          <a class="nav-link ml-3 my-1" id="sub-link" href="#client-invoice-search">🔍 Client Invoice Search</a>
+                          <a class="nav-link ml-3 my-1" id="sub-link" href="#patient-invoice-search">🔍 Patient Invoice Search</a>
+                          <a class="nav-link ml-3 my-1" id="sub-link" href="#patient-statement-search">🔍 Patient Statement Search</a>
+                        </nav>
+                      </div>
+                    </div>
+  
+                    <div class="btn-group dropright">
+                      <a class="nav-link ml-3 my-1 dropdown-toggle" id="transactions" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Transactions</a>
+                      <div class="dropdown-menu" aria-labelledby="transactions">
+                        <nav class="nav nav-pills flex-column">
+                          <a class="nav-link ml-3 my-1" id="sub-link" href="#transaction-stat">🔍 Transaction Stat</a>
+                          <a class="nav-link ml-3 my-1" id="sub-link" href="#transaction-search">🔍 Transaction Search</a>
+                        </nav>
+                      </div>
+                    </div>
+                    
+                    <div class="btn-group dropright">
+                      <a class="nav-link ml-3 my-1 dropdown-toggle" id="logs" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">🗂️ Logs</a>
+                      <div class="dropdown-menu" aria-labelledby="logs">
+                        <nav class="nav nav-pills flex-column">
+                          <a class="nav-link ml-3 my-1" href="#transmission-log">🗂️ X12 Transmission Log</a>
+                        </nav>
+                      </div>
+                    </div> 
+                  </nav>
+                  <a class="nav-link" id="main-link" href="#workflow-action-queue">🔍 Workflow Action Queue</a>
+                  </div>
+  
+                  <a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#setup" role="button" aria-expanded="false" aria-controls="setup">📂 Setup</a>
+                    <div class="collapse" id="setup">
+                      <div class="btn-group dropright">
+                        <a class="nav-link ml-3 my-1 dropdown-toggle" id="setup-encounters" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">📂 Encounters</a>
+                      <div class="dropdown-menu" aria-labelledby="setup-encounters">
+                    <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ml-3 my-1" id="sub-link" href="#workflow-types">🗂️ Workflow Types</a>
+                    </nav>
+                  </div>
+                  </div>
 
-      </nav>
+                  <div class="btn-group dropright">
+                    <a class="nav-link ml-3 my-1 dropdown-toggle" id="setup-cpts" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">📂 CPTs</a>
+                    <div class="dropdown-menu" aria-labelledby="setup-cpts">
+                      <nav class="nav nav-pills flex-column">
+                        <a class="nav-link ml-3 my-1" id="sub-link" href="#cpt-codes">🗂️ CPT Codes</a>
+                        <a class="nav-link ml-3 my-1" id="sub-link" href="#cpt-indicators">🗂️ CPT Code Indicators</a>
+                        <a class="nav-link ml-3 my-1" id="sub-link" href="#cpt-modifiers">🗂️ CPT Codes Modifiers</a>
+                      </nav>
+                    </div>
+                  </div>
+    </nav>
+  </div>
+
 </div>
 
-<div data-spy="scroll" id="scroller" data-target="#navbar-example3" data-offset="0">
 
-  <h4 class="card-title" id="encounter">📂 Encounters</h4>
-  <div class="container-lg">
+  <h1><img src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672368514/ligologo_cbwkee.png" width="200" height="60" alt="LigoLab" loading="lazy">RCM Workflow Guide</img></h1>
+  <h1 id="main-title">Created By: Aram Avakyan, last modified on Dec. 29, 2022</h1>
 
-    <div class="card card-body">
-      <h5 class="card-subtitle mb-2" id="search">🔍 Search</h5>
-      <div class="card-body">
+<div class="float-left collapse" data-spy="scroll" id="guide" data-target="#rcm-guide-navbar" data-offset="0">
+
+<h4 class="card-title"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#encounters" role="button" aria-expanded="false" aria-controls="encounters">📂 Encounters</a></h4>
+  <div class="container-xl collapse" id="encounters">
+    <p id="sub-title"><strong>Workflow Guide: 📂 Encounters</strong></p>
+
+    <div class="card card-body" id="search-encounters">
+      <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" data-toggle="collapse" id="main-link" href="#search-workflow" role="button" aria-expanded="false" aria-controls="search-workflow">🔍 Search</a></h5>
+      <div class="card-body collapse" id="search-workflow">
         <p><strong>Encounters 🔍 Search</strong></p>
         <p>Features three of the following complementing data-oriented tabs:</p>
-        <h6 id="list">1 - Encounter:</h6>
+        <h6 id="list">1 - Encounter Tab:</h6>
         <li id="listing">Helpful in locating virtually any billing encounter recorded in the system</li>
         <li id="listing">Data filters & fields are geared more towards the various data entities typically present in billing encounters</li>
-        <li id="listing">Users are able to Payment Source Info to locate encounters</li>
+        <li id="listing">Users are able to utilize Payment Source Info as data filters to narrow encounter results further</li>
         <div class="card-body" id="gif-workflow">
           <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672305481/encounter_search_uaeasm.gif">
         </div>
-        <h6 id="list">2 - Workflow:</h6>
+        <h6 id="list">2 - Workflow Tab:</h6>
         <li id="listing">Utilized to locate encounters going to the various workflows present in the platform</li>
         <li id="listing">Features a unique Queue data filter to narrow results based on a workflow queue</li>
         <li id="listing">The ability to isolate search results further based on Flags & Status</li>
         <div class="card=body" id="gif-workflow">
           <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264688/Confluence__software_-Logo.wine_anmefq.png">
         </div>
-        <h6 id="list">3 - LIS:</h6>
+        <h6 id="list">3 - LIS Tab:</h6>
         <li id="listing">Important to validate the accuracy based on the ordered tests & other provider controlled logistics</li>
         <li id="listing">Contains numerous unqiue exclusion filters to narrow search results even more</li>
         <li id="listing">Has a powerful combination of drop-down data filters connected to lab testing, results & CPT codes</li>
@@ -171,9 +209,9 @@
       </div>
       </div>
 
-      <div class="card card-body">
-        <h5 class="card-subtitle mb-2 dropdown-toggle" id="demographics" data-toggle="collapse" href="#demo-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Demographics</h5>
-        <div class="collapse" id="demo-workflow">
+      <div class="card card-body" id="demographics">
+        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#demo-workflow" role="button" aria-expanded="false" aria-controls="demo-workflow">🗂️ Demographics</a></h5>
+        <div class="card card-body collapse" id="demo-workflow">
           <div class="card card-body">
             <ul>Performing An Address Verification in the <strong>Demographics Tab</strong> on an address field:</ul>
             <li>“Click” on the <strong>WP</strong> icon or  ℹ️ icon to initiate the address verification function</li>
@@ -186,9 +224,9 @@
         </div>
       </div>
 
-      <div class="card card-body">
-        <h5 class="card-subtitle mb-2 dropdown-toggle" id="coding" data-toggle="collapse" href="#coding-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Coding</h5>
-        <div class="collapse" id="coding-workflow">
+      <div class="card card-body" id="coding">
+        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#coding-workflow" role="button" aria-expanded="false" aria-controls="coding-workflow">🗂️ Coding</a></h5>
+        <div class="card card-body collapse" id="coding-workflow">
           <div class="card card-body">
             <p><strong>Coding Workflow</strong></p>
           </div>
@@ -198,27 +236,29 @@
         </div>
       </div>
 
-      <div class="card card-body">
-        <h5 class="card-subtitle mb-2 dropdown-toggle" id="review" data-toggle="collapse" href="#review-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Review</h5>
-        <div class="collapse" id="review-workflow">
-          <div class="card card-body">
+      <div class="card card-body" id="review">
+        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#review-workflow" role="button" aria-expanded="false" aria-controls="review-workflow">🗂️ Review</a></h5>
+        <div class="card card-body collapse" id="review-workflow">
+          <div class="card-body">
             <p><strong>Review Workflow</strong></p>
           </div>
           <div class="card=body" id="gif-workflow">
             <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264688/Confluence__software_-Logo.wine_anmefq.png">
           </div>
         </div>
+      </div>
 
   </div>
 
-  <h4 class="card-title" id="insurance-claims">📂 Insurance Claims</h4>
-    <p><strong>Guide: Insurance Claims Workflow</strong></p>
-<div class="container-lg">
+<h4 class="card-title"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#insurance-claims" role="button" aria-expanded="false" aria-controls="insurance-claims">📂 Insurance Claims</a></h4>
+    
+<div class="container-xl collapse" id="insurance-claims">
+  <p id="sub-title"><strong>Workflow Guide: 📂 Insurance Claims</strong></p>
 
-  <div class="card card-body">
-    <h5 class="card-subtitle mb-2 dropdown-toggle" id="rejections" data-toggle="collapse" href="#rejections-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Rejections</h5>
-    <div class="collapse" id="rejections-workflow">
-      <div class="card card-body">
+  <div class="card card-body" id="rejections">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#rejections-workflow" role="button" aria-expanded="false" aria-controls="rejections-workflow">🗂️ Rejections</a></h5>
+    <div class="card card-body collapse" id="rejections-workflow">
+      <div class="card-body">
         <p><strong>Rejections Workflow</strong></p>
       </div>
       <div class="card=body" id="gif-workflow">
@@ -227,9 +267,9 @@
     </div>
   </div>
 
-  <div class="card card-body">
-    <h5 class="card-subtitle mb-2 dropdown-toggle" id="denials" data-toggle="collapse" href="#denials-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Denials</h5>
-    <div class="collapse" id="denials-workflow">
+  <div class="card card-body" id="denials">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#denials-workflow" role="button" aria-expanded="false" aria-controls="denials-workflow">🗂️ Denials</a></h5>
+    <div class="card card-body collapse" id="denials-workflow">
       <div class="card card-body">
         <p><strong>Denials Workflow</strong></p>
       </div>
@@ -239,12 +279,11 @@
     </div>
   </div>
     
-  <div class="card card-body">
-  <h5 class="card-subtitle mb-2 dropdown-toggle" id="insurance-review" data-toggle="collapse" href="#insurance-review-workflow" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ Insurance Review</h5>
-  <div class="collapse" id="insurance-review-workflow">
-    <div class="card card-body">
-      <p><strong>Insurance Review Workflow</strong></p>
-      <p>Guide: Primary Claim Resubmission</p>
+  <div class="card card-body" id="insurance-review">
+  <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#insurance-review-workflow" role="button" aria-expanded="false" aria-controls="insurance-review-workflow">🗂️ Insurance Review</a></h5>
+  <div class="card card-body collapse" id="insurance-review-workflow">
+  
+      <p>Walkthrough: Primary Claim Resubmission</p>
           <li> 
             Select the <strong>Account</strong> corresponding to the claim in the <strong>Charges</strong> section via “right-clicking” & selecting the 🔄 <strong>Re-submit Primary Claim</strong> option
           </li>
@@ -316,7 +355,6 @@
             <li>
               Current re-submission linked data rows NO longer appear in the <strong>Timeline Tab</strong>
             </li>
-    </div>
     <div class="card-body" id="gif-workflow">
       <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672296397/primary_resubmit_ins_review_ubp44p.gif">
     </div>
@@ -325,101 +363,353 @@
    
 </div>
 
-<h4 class="card-title" id="insurance-claims">📂 Payments</h4>
-<p><strong>Guide: Payment Events Workflow</strong></p>
-<div class="container-lg">
- 
-    <div class="card card-body">
-    <h5 class="card-subtitle mb-2 dropdown-toggle" id="insurance-review" data-toggle="collapse" href="#new-payments" role="button" aria-expanded="false" aria-controls="collapseExample">🗂️ New Payment</h5>
-    <div class="collapse" id="new-payments">
+<h4 class="card-title"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#payments" role="button" aria-expanded="false" aria-controls="payments">📂 Payments</a></h4>
+  <div class="container-xl collapse" id="payments">
+    <p id="sub-title"><strong>Workflow Guide: 📂 Payments</strong></p>
 
-        <div class="card-body" id="insurance">
-          <h5 class="card-subtitle mb-2">🧾 Insurance</h5>
+<div class="card card-body">
+<h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#new-payment-workflow" role="button" aria-expanded="false" aria-controls="new-payment-workflow">🗂️ New Payment</a></h5>
+  <div class="container-lg collapse" id="new-payment-workflow">
+    <p><strong>Workflow Guide - Posting Utility: 🗂️ New Payment</strong></p>
+      <div class="card card-body">
+        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#insurance" role="button" aria-expanded="false" aria-controls="insurance">🧾 Insurance</a></h5>
+        <div class="card card-body collapse" id="insurance">
+          <div class="card card-body">
+            <p><strong>Workflow Guide - Posting Utility: 🧾 Insurance Payments</strong></p>
+          </div>
           <div class="card-body">
             <img src="">
           </div>
         </div>
+      </div>
 
-        <div class="card-body" id="patient">
-          <h5 class="card-subtitle mb-2">🧾 Patient</h5>
+      <div class="card card-body">
+        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#patient" role="button" aria-expanded="false" aria-controls="patient">🧾 Patient</a></h5>
+        <div class="card card-body collapse" id="patient">
+          <div class="card card-body">
+            <p><strong>Workflow Guide - Posting Utility: 🧾 Patient Payments</strong></p>
+          </div>
           <div class="card-body">
             <img src="">
           </div>
         </div>
+      </div>
 
-        <div class="card-body" id="client">
-          <h5 class="card-subtitle mb-2">🧾 Client</h5>
+      <div class="card card-body">
+        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#client" role="button" aria-expanded="false" aria-controls="client">🧾 Client</a></h5>
+        <div class="card card-body collapse" id="client">
+          <div class="card card-body">
+            <p><strong>Workflow Guide - Posting Utility: 🧾 Client Payments</strong></p>
+          </div>
           <div class="card-body">
             <img src="">
           </div>
         </div>
-        </div>
-        </div>
-       
-    <h5 class="card-subtitle mb-2" id="incomplete-payments">🗂️ Incomplete Payments</h5>
-    <p>...</p>
-    <h5 class="card-subtitle mb-2" id="payment-manifest-queue">🗂️ Payment Manifest Queue</h5>
-    <p>...</p>
-    <h5 class="card-subtitle mb-2" id="payment-manifest-log">🗂️ Payment Manifest Log</h5>
-    <p>...</p>
+      </div>
+      
+  </div>
+</div>
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#incomplete-payments-workflow" role="button" aria-expanded="false" aria-controls="incomplete-payments-workflow">🗂️ Incomplete Payments</a></h5>
+    <div class="card card-body collapse" id="incomplete-payments-workflow">
+      <div class="card card-body">
+        <p><strong>Workflow Guide - 🗂️ Incomplete Payments</strong></p>
+      </div>
+      <div class="card-body">
+        <img src="">
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#payment-manifest-queue-workflow" role="button" aria-expanded="false" aria-controls="payment-manifest-queue-workflow">🗂️ Payment Manifest Queue</a></h5>
+     <div class="card card-body collapse" id="payment-manifest-queue-workflow">
+      <div class="card card-body">
+        <p><strong>Workflow Guide - 🗂️ Payment Manifest Queue</strong></p>
+      </div>
+      <div class="card-body">
+        <img src="">
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#payment-manifest-log-workflow" role="button" aria-expanded="false" aria-controls="payment-manifest-log-workflow">🗂️ Payment Manifest Log</a></h5>
+    <div class="card card-body collapse" id="payment-manifest-log-workflow">
+      <div class="card card-body">
+        <p><strong>Workflow Guide - 🗂️ Payment Manifest Log</strong></p>
+      </div>
+      <div class="card-body">
+        <img src="">
+      </div>
+    </div>
+  </div>
 
 </div>
 
-<div class="card">
-  <div class="card-body">
-    <h4 class="card-title" id="reports">📂 Reports</h4>
-    <p>...</p>
-    <h5 class="card-subtitle mb-2 dropdown-toggle" data-toggle="collapse" href="#encounter" role="button" aria-expanded="false" aria-controls="collapseExample" id="encounters">🗂️ Encounters</h5>
-    <div class="collapse" id="encounter">
-        <div class="card-body" id="encounter-stat">
-          <h5 class="card-subtitle mb-2">🔍 Encounter Stat</h5>
-          <div class="card-body">
-            <img src="">
-          </div>
-        </div>
+<h4 class="card-title"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#reports" role="button" aria-expanded="false" aria-controls="reports">📂 Reports</a></h4>
+  <div class="container-lg collapse" id="reports">
+    <p id="sub-title"><strong>Workflow Guide: 📂 Reports</strong></p>
 
-        <div class="card-body" id="encounter-search">
-          <h5 class="card-subtitle mb-2">🔍 Encounter Search</h5>
-          <div class="card-body">
-            <img src="">
-          </div>
-        </div>
-        </div>
+  <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounter" role="button" aria-expanded="false" aria-controls="encounter">🗂️ Encounters</a></h5>
+    <div class="container-lg collapse" id="encounter">
+    
+      <div class="card card-body">
+        <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounter-stat-workflow" role="button" aria-expanded="false" aria-controls="encounter-stat-workflow">🔍 Encounter Stat</a></h5>
+          <div class="card card-body collapse" id="encounter-stat-workflow">
+      <div class="card card-body">
+        <p><strong>Workflow Guide - 🔍 Encounter Stat </strong></p>
+      </div>
+      <div class="card-body">
+        <img src="">
+      </div>
+    </div>
+  </div>
 
-    <h5 class="card-subtitle mb-2 dropdown-toggle" data-toggle="collapse" href="#cpt" role="button" aria-expanded="false" aria-controls="collapseExample" id="cpts">🗂️ CPTs</h5>
-    <div class="collapse" id="cpt">
-        <div class="card-body" id="cpt-stat">
-          <h5 class="card-subtitle mb-2">🔍 CPT Stat</h5>
-          <div class="card-body">
-            <img src="">
-          </div>
-        </div>
-
-        <div class="card-body" id="cpt-search">
-          <h5 class="card-subtitle mb-2">🔍 CPT Search</h5>
-          <div class="card-body">
-            <img src="">
-          </div>
-        </div>
-        </div>
-
-    <h5 class="card-subtitle mb-2" id="timeline-events">🗂️ Timeline Events</h5>
-    <p>...</p>
-    <h5 class="card-subtitle mb-2" id="invoices">🗂️ Invoices</h5>
-    <p>...</p>
-    <h5 class="card-subtitle mb-2" id="transactions">🗂️ Transactions</h5>
-    <p>...</p>
-    <h5 class="card-subtitle mb-2" id="logs">🗂️ Logs</h5>
-    <p>...</p>
-    <h4 class="card-title" id="workflow-action-queue">🔍 Workflow Action Queue</h4>
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounter-search-workflow" role="button" aria-expanded="false" aria-controls="encounter-search-workflow">🔍 Encounter Search</a></h5>
+  <div class="card card-body collapse" id="encounter-search-workflow">
+    <div class="card card-body">
+      <p><strong>Workflow Guide - 🔍 Encounter Search</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
   </div>
 </div>
 
 </div>
+
+<h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpts" role="button" aria-expanded="false" aria-controls="cpts">🗂️ CPTs</a></h5>
+  <div class="container-lg collapse" id="cpts">
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-stat-workflow" role="button" aria-expanded="false" aria-controls="cpt-stat-workflow">🔍 CPT Stat</a></h5>
+  <div class="card card-body collapse" id="cpt-stat-workflow">
+    <div class="card card-body">
+      <p><strong>Workflow Guide -  🔍 CPT Stat</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+</div>
+
+<div class="card card-body">
+  <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-search-workflow" role="button" aria-expanded="false" aria-controls="cpt-search-workflow">🔍 CPT Search</a></h5>
+<div class="card card-body collapse" id="cpt-search-workflow">
+  <div class="card card-body">
+    <p><strong>Workflow Guide - 🔍 CPT Search</strong></p>
+  </div>
+  <div class="card-body">
+    <img src="">
+  </div>
+</div>
+</div>
+
+</div>
+
+<h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#timeline-events" role="button" aria-expanded="false" aria-controls="timeline-events">🗂️ Timeline Events</a></h5>
+  <div class="container-lg collapse" id="timeline-events">
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#event-stats-workflow" role="button" aria-expanded="false" aria-controls="event-stats-workflow">🔍 Event Stats</a></h5>
+  <div class="card card-body collapse" id="event-stats-workflow">
+    <div class="card card-body">
+      <p><strong>Workflow Guide - 🔍 Event Stats</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+  
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#event-search-workflow" role="button" aria-expanded="false" aria-controls="event-search-workflow">🔍 Event Search</a></h5>
+  <div class="card card-body collapse" id="event-search-workflow">
+    <div class="card card-body">
+      <p><strong>Workflow Guide - 🔍 Event Search</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#event-detail-search-workflow" role="button" aria-expanded="false" aria-controls="event-detail-search-workflow">🔍 Event Detail Search</a></h5>
+  <div class="card card-body collapse" id="event-detail-search-workflow">
+    <div class="card card-body">
+      <p><strong>Workflow Guide - 🔍 Event Detail Search</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#invoices" role="button" aria-expanded="false" aria-controls="invoices">🗂️ Invoices</a></h5>
+<div class="container-lg collapse" id="invoices">
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#client-invoice-search" role="button" aria-expanded="false" aria-controls="client-invoice-search">🔍 Client Invoice Search</a></h5>
+  <div class="card card-body collapse" id="client-invoice-search">
+    <div class="card card-body">
+      <p><strong>Workflow Guide - 🔍 Client Invoice Search</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#patient-invoice-search" role="button" aria-expanded="false" aria-controls="patient-invoice-search">🔍 Patient Invoice Search</a></h5>
+  <div class="card card-body collapse" id="patient-invoice-search">
+    <div class="card card-body">
+      <p><strong>Workflow Guide - 🔍 Patient Invoice Search</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#patient-statement-search" role="button" aria-expanded="false" aria-controls="patient-statement-search">🔍 Patient Statement Search</a></h5>
+  <div class="card card-body collapse" id="patient-statement-search">
+    <div class="card card-body">
+      <p><strong>Workflow Guide - 🔍 Patient Statement Search</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#transactions" role="button" aria-expanded="false" aria-controls="transactions">🗂️ Transactions</a></h5>
+<div class="container-lg collapse" id="transactions">
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#transaction-stat-workflow" role="button" aria-expanded="false" aria-controls="transaction-stat-workflow">🔍 Transaction Stat</a></h5>
+  <div class="card card-body collapse" id="transaction-stat-workflow">
+    <div class="card card-body">
+      <p><strong>Workflow Guide - 🔍 Transaction Stat</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#transaction-search-workflow" role="button" aria-expanded="false" aria-controls="transaction-search-workflow">🔍 Transaction Search</a></h5>
+  <div class="card card-body collapse" id="transaction-search-workflow">
+    <div class="card card-body">
+      <p><strong>Workflow Guide - 🔍 Transaction Search</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#logs" role="button" aria-expanded="false" aria-controls="logs">🗂️ Logs</a></h5>
+<div class="container-lg collapse" id="logs">
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><strong>Workflow Guide -  🗂️ X12 Transmission Log</strong></h5>
+    <div class="card card-body">
+      🗂️ X12 Transmission Log Workflow
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<h4 class="card-title"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#workflow-action-queue" role="button" aria-expanded="false" aria-controls="workflow-action-queue">🔍 Workflow Action Queue</a></h4>
+<div class="container-lg collapse" id="workflow-action-queue">
+
+  <div class="card card-body">
+    <h5 class="card-subtitle mb-2"><strong>Guide - 🔍 Workflow Action Queue</strong></h5>
+    <div class="card card-body">
+      🔍 Workflow Action Queue
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+  </div>
+
+</div>
+</div>
+
+<h4 class="card-title"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#setup" role="button" aria-expanded="false" aria-controls="Setup">📂 Setup</a></h4>
+    
+<div class="container-xl collapse" id="setup">
+  <p id="sub-title"><strong>Workflow Guide: 📂 Setup</strong></p>
+
+  <div class="card card-body" id="encounters-setup">
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounters-workflow" role="button" aria-expanded="false" aria-controls="encounters-workflow">📂 Encounters</a></h5>
+    <div class="card card-body collapse" id="encounters-workflow">
+      <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#workflow-types" role="button" aria-expanded="false" aria-controls="workflow-types">🗂️ Workflow Types</a></h5>
+  <div class="card card-body collapse" id="workflow-types">
+    <div class="card card-body">
+      <p><strong>Setup Guide - 🗂️ Workflow Types</strong></p>
+    </div>
+    <div class="card-body">
+      <img src="">
+    </div>
+  </div>
+    </div>
+  </div>
+
+    <div class="card card-body" id="cpts-setup">
+      <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-setup" role="button" aria-expanded="false" aria-controls="cpt-setup">📂 CPTs</a></h5>
+      <div class="card card-body collapse" id="cpt-setup">
+        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-codes" role="button" aria-expanded="false" aria-controls="cpt-codes">🗂️ CPT Codes</a></h5>
+    <div class="card card-body collapse" id="cpt-codes">
+      <div class="card card-body">
+        <p><strong>Setup Guide - 🗂️ CPT Codes</strong></p>
+      </div>
+      <div class="card-body">
+        <img src="">
+      </div>
+    </div>
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-indicators" role="button" aria-expanded="false" aria-controls="cpt-indicators">🗂️ CPT Code Indicators</a></h5>
+    <div class="card card-body collapse" id="cpt-indicators">
+      <div class="card card-body">
+        <p><strong>Setup Guide - 🗂️ CPT Code Indicators</strong></p>
+      </div>
+      <div class="card-body">
+        <img src="">
+      </div>
+    </div>
+    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-modifiers" role="button" aria-expanded="false" aria-controls="cpt-modifiers">🗂️ CPT Code Modifiers</a></h5>
+    <div class="card card-body collapse" id="cpt-modifiers">
+      <div class="card card-body">
+        <p><strong>Setup Guide - 🗂️ CPT Code Modifiers</strong></p>
+      </div>
+      <div class="card-body">
+        <img src="">
+      </div>
+    </div>
+      </div>
+    </div>
+
+  </div>
   
   </div><br>     
   </main>
-  </body>
+</body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

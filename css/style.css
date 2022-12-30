@@ -11,6 +11,7 @@ body {
 #float-left {
   padding-left: 2%;
   padding-top: 2%;
+  background-color: rgb(230, 231, 233);
 }
 
 :root {
@@ -22,13 +23,14 @@ body {
 }
 
 #conf-link:hover {
- background-color: azure;
+ background-color: rgb(134, 130, 130);
  cursor: pointer;
 }
 
 #conf-logo:hover {
   cursor: pointer;
   border: 1px solid rgb(1, 1, 80);
+  background-color: rgb(1, 1, 80);
 }
 #magnify {
   color: grey;
@@ -59,7 +61,6 @@ body {
   color: rgb(134, 130, 130);
   vertical-align: middle;
   margin-bottom: 3%;
-  padding: 2%;
 }
 
 #nav-menu {
@@ -68,19 +69,19 @@ body {
 
 #rcm-guide:hover {
   cursor: pointer;
-  background-image: linear-gradient(rgb(169, 186, 247) 0%, rgb(6, 6, 195) 100%);
-  border: none;
-  padding: 2%;
-  border-radius: 0.25em;
-  color: whitesmoke;
+  color: black;
+}
+
+#rcm-guide-navbar {
+  width: 80%;
 }
 
 #main-link {
   font-size: 125%;
 }
 
-#scroller {
-  padding-top: 2%;
+#main-link:hover {
+  color: black;
 }
 
 #gif-workflow {
@@ -97,4 +98,31 @@ body {
 
 #listing {
   padding-left: 7.5%;
+}
+
+#sub-title {
+  text-align: center;
+}
+
+#sub-link:hover {
+  color: black;
+}
+
+.dropright {
+  color:rgb(3, 3, 172);
+}
+
+.dropright:hover {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 2%;
+}
+
+#main-title {
+  font-size: 75%;
+  text-align: center;
+  padding-top: 1%;
 }
