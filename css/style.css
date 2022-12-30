@@ -96,7 +96,7 @@ body {
 
 #gif-workflow {
   border: solid 1px black;
-  border-radius: 0.5em;
+  border-radius: 0.25em;
 }
 
 #gif {
@@ -104,7 +104,8 @@ body {
 }
 
 #list {
-  padding-left: 1%;
+ text-align: center;
+ font-size: 150%;
 }
 
 #listing {
@@ -141,4 +142,8 @@ h1 {
 #b-link:hover {
  cursor: pointer;
  font-weight: bold;
+}
+
+#setup {
+  padding-bottom: 5%;
 }
