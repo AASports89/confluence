@@ -15,6 +15,7 @@ body {
   background-color: rgb(228, 230, 236);
   border-bottom-right-radius: 0.5em;
   padding-top: 1%;
+  border: 1px solid rgb(122, 121, 128);
 }
 
 :root {
@@ -146,4 +147,8 @@ h1 {
 
 #setup {
   padding-bottom: 5%;
+}
+
+#guide {
+  padding-bottom: 7.5%;
 }
