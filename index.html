@@ -179,7 +179,12 @@
 </div>
 
   <h1>💰 RCM Workflow Guide</h1>
-  <h1 id="main-title">Created By: Aram Avakyan, last modified on Dec. 29, 2022</h1>
+  <h1 id="main-title">Created By: Aram Avakyan, last modified on: <span id="time"></span></h1>
+  <script>
+    var datetime = new Date();
+      console.log(datetime);
+        document.getElementById("time").textContent = datetime; 
+  </script>
 
 <div class="float-left collapse" data-spy="scroll" id="guide" data-target="#rcm-guide-navbar" data-offset="0">
 
