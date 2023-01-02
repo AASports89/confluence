@@ -14,7 +14,7 @@ body {
 #float-left {
   background-color: rgb(228, 230, 236);
   border-bottom-right-radius: 0.5em;
-  padding-top: 1%;
+  padding-top: 2%;
   border: 1px solid rgb(122, 121, 128);
 }
 
@@ -26,8 +26,16 @@ body {
   background-image: url("https://res.cloudinary.com/dhqsixgmo/image/upload/v1672266559/confluence-logo_hoaoba.png");
 }
 
+#nav-header {
+  height: 100px;
+}
+
+#conf-link {
+  margin-top: -1%;
+}
+
 #conf-link:hover {
- background-color: rgb(134, 130, 130);
+ background-color: whitesmoke;
  cursor: pointer;
 }
 
@@ -36,6 +44,7 @@ body {
   border: 1px solid rgb(1, 1, 80);
   background-color: rgb(1, 1, 80);
 }
+
 #magnify {
   color: grey;
 }
@@ -98,6 +107,7 @@ body {
 #gif-workflow {
   border: solid 1px black;
   border-radius: 0.25em;
+  padding-top: 2%;
 }
 
 #gif {
@@ -106,15 +116,29 @@ body {
 
 #list {
  text-align: center;
- font-size: 150%;
+ padding-top: 2%;
+}
+
+#first-line {
+  padding-left: 3%;
+}
+
+#line-one {
+  text-align: center;
+  font-weight: bold;
+  font-size: 125%;
+  padding-bottom: 1%;
 }
 
 #listing {
   padding-left: 7.5%;
+  padding-right: 2%;
+  padding-bottom: 2%;
 }
 
 #sub-title {
   text-align: center;
+  font-size: 100%;
 }
 
 #sub-link:hover {

@@ -24,8 +24,8 @@
 <header id="nav-header">
   <nav class="navbar navbar-light" id="nav-bar">
     <a class="navbar-brand" href="https://support.ligolab.com:8090/pages/viewpage.action?spaceKey=LG2020&title=LigoLab+Guide+for+RCM">
-      <img id="conf-link" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672266802/img_522985_vybzoz.png" width="40" height="40" alt="Confluence-Link" loading="lazy">
-      <img id="conf-logo" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264041/confluence-logo_x2rqop.png" width="250" height="80" alt="Confluence" loading="lazy">
+      <img id="conf-link" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672266802/img_522985_vybzoz.png" width="50" height="50" alt="Confluence-Link" loading="lazy">
+      <img id="conf-logo" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264041/confluence-logo_x2rqop.png" width="300" height="90" alt="Confluence" loading="lazy">
     </a>
     <form class="form-inline">
       <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit"><i class="fa-solid fa-magnifying-glass" id="magnify"></i></button>
@@ -179,86 +179,132 @@
 </div>
 
   <h1>💰 RCM Workflow Guide</h1>
-  <h1 id="main-title">Created By: Aram Avakyan, last modified on: <span id="time"></span></h1>
+  <h1 id="main-title">Created By: Aram Avakyan, Last Modified On: <span id="time"></span></h1>
   <script>
-    var datetime = new Date();
-      console.log(datetime);
-        document.getElementById("time").textContent = datetime; 
+    function refreshTime() {
+      const timeDisplay = document.getElementById("time");
+      const dateString = new Date().toLocaleString();
+      const formattedString = dateString.replace(", ", " - @: ");
+      timeDisplay.textContent = formattedString;
+    }
+    setInterval(refreshTime, 10000); 
   </script>
 
 <div class="float-left collapse" data-spy="scroll" id="guide" data-target="#rcm-guide-navbar" data-offset="0">
 
-<h4 class="card-title"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#encounters" role="button" aria-expanded="false" aria-controls="encounters">📂 Encounters</a></h4>
-  <div class="container-xl collapse" id="encounters">
-    <h3 id="sub-title"><strong>Workflow Guide: 📂 Encounters</strong></h3>
+  <h4 class="card-title"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#encounters" role="button" aria-expanded="false" aria-controls="encounters">📂 Encounters</a></h4>
+    <div class="container-xl collapse" id="encounters">
+      <h3 id="sub-title"><strong>Workflow Guide: 📂 Encounters</strong></h3>
 
     <div class="card card-body" id="search-encounters">
-      <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" data-toggle="collapse" id="main-link" href="#search-workflow" role="button" aria-expanded="false" aria-controls="search-workflow">🔍 Search</a></h5>
-      <div class="card-body collapse" id="search-workflow">
+      <h5 id="list"><a class="nav-link dropdown-toggle" data-toggle="collapse" id="main-link" href="#search-workflow" role="button" aria-expanded="false" aria-controls="search-workflow">🔍 Search</a></h5>
+      <div class="container-lg collapse" id="search-workflow">
 
-      <div class="card">
-        <h6 id="list"><strong>🔍 Search - Encounter Tab</strong></h6>
+<div class="card">
 
-          <p>The <strong>Encounter Tab</strong> is designed to assist users to isolate specific groups and individual billing encounters:</p>
-            <li id="listing">Using the variety of pre-configured data filters and input fields.</li>
-            <li id="listing">Filters and fields can be used to isolate what type of encounter data will be shown, grouped by, and include a template if applicable.</li>
-            <li id="listing">Additionally, date of service (DOS) combined with Client Account, Provider, Diagnoses, and custom pre-configured workflow-related tags are available to further narrow search results.</li>
-            <li id="listing">Inputted fields are applicable to drop-down filters resulting in a quicker route to selecting the accurate data filter choice.</li>
-            <li id="listing">Lastly, search populated encounters can be accessed via "clicking" on the <strong>📝 Actions</strong> button or simply "double-clicking" on the search result.</li>
+  <h5 id="list"><a class="nav-link dropdown-toggle" data-toggle="collapse" href="#search-encounter" role="button" aria-expanded="false" aria-controls="search-encounter">🔍 Search - Encounter Tab</a></h5>
+    <div class="collapse" id="search-encounter">
+      <p id="first-line">The <strong>Encounter Tab</strong> is designed to assist users to isolate specific groups and individual billing encounters:</p>
+        <li id="listing">Using the variety of pre-configured data filters and input fields.</li>
+        <li id="listing">Filters and fields can be used to isolate what type of encounter data will be shown, grouped by, and include a template if applicable.</li>
+        <li id="listing">Additionally, date of service (DOS) combined with Client Account, Provider, Diagnoses, and custom pre-configured workflow-related tags are available to further narrow search results.</li>
+        <li id="listing">Inputted fields are applicable to drop-down filters resulting in a quicker route to selecting the accurate data filter choice.</li>
+        <li id="listing">Lastly, search populated encounters can be accessed via "clicking" on the <strong>📝 Actions</strong> button or simply "double-clicking" on the search result.</li>
 
-            <div class="card-body" id="gif-workflow">
-              <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672431863/search_encounters_module_s5qpqi.gif">
-            </div>
+      <div class="card-body" id="gif-workflow">
+        <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672431863/search_encounters_module_s5qpqi.gif">
       </div>
-      
-        <div class="card">
-          <h6 id="list"><strong>🔍 Search - Workflow Tab</strong></h6>
+    </div>
+</div>
 
-            <p>The <strong>Workflow Tab</strong> is geared to isolating specific groups and individual workflow-related billing encounters:</p>
-              <li id="listing">Consists of date-centric, user-related, and workflow queue specific date filters.</li>
-              <li id="listing">The filters linked to showing, grouping, and including a template are also available.</li>
-              <li id="listing"><strong>Queue</strong>, <strong>Flag</strong>, and <strong>Status</strong> are the 3-unique filters w/ the ability to isolate encounter search relates based on workflow related tasks.</li>
+<div class="card">
 
-              <div class="card-body" id="gif-workflow">
-                <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672434118/search_workflow_encounters_uemgxc.gif">
-              </div>
-            </div>
-        
-        <div class="card">
-          <h6 id="list"><strong>🔍 Search - LIS Tab</strong></h6>
+  <h5 id="list"><a class="nav-link dropdown-toggle" data-toggle="collapse" href="#search-workflows" role="button" aria-expanded="false" aria-controls="search-workflows">🔍 Search - Workflow Tab</a></h5>
+    <div class="collapse" id="search-workflows">
+      <p id="first-line">The <strong>Workflow Tab</strong> is geared to isolating specific groups and individual workflow-related billing encounters:</p>
+        <li id="listing">Consists of date-centric, user-related, and workflow queue specific date filters.</li>
+        <li id="listing">The filters linked to showing, grouping, and including a template are also available.</li>
+        <li id="listing"><strong>Queue</strong>, <strong>Flag</strong>, and <strong>Status</strong> are the 3-unique filters w/ the ability to isolate encounter search relates based on workflow related tasks.</li>
 
-            <p>The <strong>LIS Tab</strong> is designed to assist users to isolate specific groups and individual workflow related billing encounters:</p>
-              <li id="listing">Consists of date-centric, user-related, and workflow queue specific date filters.</li>
-              <li id="listing">The filters linked to showing, grouping, and including a template are also available.</li>
-              <li id="listing"><strong>Queue</strong>, <strong>Flag</strong>, and <strong>Status</strong> are the 3-unique filters w/ the ability to isolate encounter search relates based on workflow related tasks.</li>
-              <div class="card-body" id="gif-workflow">
-                <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_31_lddcgs.png">
-              </div>
-            </div>
-      </div>
-      </div>
+        <div class="card-body" id="gif-workflow">
+          <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672434118/search_workflow_encounters_uemgxc.gif">
+        </div>
+    </div>
+</div>
 
-      <div class="card card-body" id="demographics">
-        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#demo-workflow" role="button" aria-expanded="false" aria-controls="demo-workflow">🗂️ Demographics</a></h5>
-        <div class="card card-body collapse" id="demo-workflow">
-          <div class="card card-body">
-            <ul>Performing An Address Verification in the <strong>Demographics Tab</strong> on an address field:</ul>
-            <li>“Click” on the <strong>WP</strong> icon or  ℹ️ icon to initiate the address verification function</li>
-            <li>“Click” on <strong>Accept New Address</strong> <strong> - Note:</strong> the ✅ icon in the right-hand corner of the address data field:</li>
-            <li>“Real-time” indication appears as the ✅ icon confirming address verification has been completed & validated</li>     
-          </div>
-          <div class="container" id="gif-workflow">
+<div class="card">
+  <h5 id="list"><a class="nav-link dropdown-toggle" data-toggle="collapse" href="#search-LIS" role="button" aria-expanded="false" aria-controls="search-LIS">🔍 Search - LIS Tab</a></h5>
+    <div class="collapse" id="search-LIS">
+      <p id="first-line">The <strong>LIS Tab</strong> is designed to assist users to isolate specific groups and individual workflow related billing encounters:</p>
+        <li id="listing">Consists of date-centric, user-related, and workflow queue specific date filters.</li>
+        <li id="listing">The filters linked to showing, grouping, and including a template are also available.</li>
+        <li id="listing"><strong>Queue</strong>, <strong>Flag</strong>, and <strong>Status</strong> are the 3-unique filters w/ the ability to isolate encounter search relates based on workflow related tasks.</li>
+        <div class="card-body" id="gif-workflow">
+          <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_31_lddcgs.png">
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<div class="card card-body">
+
+  <h5 id="list"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#demo-workflow" role="button" aria-expanded="false" aria-controls="demo-workflow">🗂️ Demographics</a></h5>
+    <div class="card-body collapse" id="demo-workflow">
+
+    <div class="card-body">
+      <h6 id="line-one">Performing a search using any of the available data filters:</h6>
+        <li id="listing">Numerous filters exist in the form of drop-down menus 🔽 w/ pre-configured options</li>
+        <li id="listing">Additionally, filter fields are present where specific data can be inputted to search for exact billing encounters and pre-populate data w/in drop-down menus 🔽</li>
+        <li id="listing">Select & open any encounter w/in the populated data rows via “clicking” on the <strong>Actions 📝</strong> button or “double-clicking” on a row</li>
+        <li id="listing">The selected data row opens into a 🖥️ <strong>Billing Encounter</strong> window displaying all corresponding claim data</li>
+        <div class="card-body" id="gif-workflow">
+            <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672646324/demo_search_mbnwp5.gif">
+        </div>
+    </div>
+         
+    <div class="card-body">
+        <h6 id="line-one">Performing an address verification in the <strong>Demographics Tab</strong> on an address field:</h6>
+          <li id="listing">“Click” on the <strong>WP</strong> icon or  ℹ️ icon to initiate the address verification function</li>
+          <li id="listing">“Click” on <strong>Accept New Address</strong> <strong> - Note:</strong> the ✅ icon in the right-hand corner of the address data field:</li>
+          <li id="listing">“Real-time” indication appears as the ✅ icon confirming address verification has been completed & validated</li>     
+          <div class="card-body" id="gif-workflow">
             <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672291405/add_payer_address_verf_gdjsu6.gif">
           </div>
+    </div>
+
+  <div class="card-body">
+      <h6 id="line-one">Accessing a claim in the <strong>Demographics Tab</strong> to start the workflow process:</h6>
+        <li id="listing">“Click” on the <strong>Start ▶️ Workflow Queue</strong> button & note the following data appearing in the corresponding data row in the <strong>Workflow Queues</strong> section:</li>
+        <li id="listing">Start - date & time stamp</li>
+        <li id="listing">Start User</li>
+        <li id="listing">Queue - designated workflow</li>
+        <li id="listing">The claim can be accessed in the corresponding <strong>Queue</strong> as indicated w/in the data row in the <strong>Workflow Queues</strong> section</li>    
+        <div class="card-body" id="gif-workflow">
+          <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672665120/LL_doc_37_atvsfi.png">
         </div>
+  </div>
+
+  <div class="card-body">
+    <h6 id="line-one">Adding a <strong>Payment Source</strong> to an existing claim:</h6>
+      <li id="listing">The <strong>Billing/Insurance</strong> section w/in the 🖥️ Billing Encounter window holds the <strong>Payment Source</strong> drop-down menu options 🔽</li>
+      <li id="listing">Select a <strong>Payer</strong> from the drop-down menu options 🔽</li>
+      <li id="listing">Input data in all of the required data fields</li>
+      <div class="card-body" id="gif-workflow">
+        <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672669210/add_payment_source_agstsh.gif">
       </div>
+</div>
+
+  </div>
+
+</div>
 
       <div class="card card-body" id="coding">
-        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#coding-workflow" role="button" aria-expanded="false" aria-controls="coding-workflow">🗂️ Coding</a></h5>
+        <h5 id="list"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#coding-workflow" role="button" aria-expanded="false" aria-controls="coding-workflow">🗂️ Coding</a></h5>
+        
         <div class="card card-body collapse" id="coding-workflow">
-          <div class="card card-body">
             <p><strong>Coding Workflow</strong></p>
-          </div>
           <div class="card-body" id="gif-workflow">
             <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_31_lddcgs.png">
           </div>
@@ -266,11 +312,10 @@
       </div>
 
       <div class="card card-body" id="review">
-        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#review-workflow" role="button" aria-expanded="false" aria-controls="review-workflow">🗂️ Review</a></h5>
+        <h5 id="list"><a class="nav-link dropdown-toggle" id="main-link" data-toggle="collapse" href="#review-workflow" role="button" aria-expanded="false" aria-controls="review-workflow">🗂️ Review</a></h5>
+        
         <div class="card card-body collapse" id="review-workflow">
-          <div class="card-body">
             <p><strong>Review Workflow</strong></p>
-          </div>
           <div class="card-body" id="gif-workflow">
             <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_29_qlujkw.png">
           </div>
@@ -285,11 +330,9 @@
   <h3 id="sub-title"><strong>Workflow Guide: 📂 Insurance Claims</strong></h3>
 
   <div class="card card-body" id="rejections">
-    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#rejections-workflow" role="button" aria-expanded="false" aria-controls="rejections-workflow">🗂️ Rejections</a></h5>
+    <h5 id="list"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#rejections-workflow" role="button" aria-expanded="false" aria-controls="rejections-workflow">🗂️ Rejections</a></h5>
     <div class="card card-body collapse" id="rejections-workflow">
-      <div class="card-body">
         <p><strong>Rejections Workflow</strong></p>
-      </div>
       <div class="card-body" id="gif-workflow">
         <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_29_qlujkw.png">
     </div>
@@ -297,11 +340,10 @@
 </div>
 
   <div class="card card-body" id="denials">
-    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#denials-workflow" role="button" aria-expanded="false" aria-controls="denials-workflow">🗂️ Denials</a></h5>
+    <h5 id="list"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#denials-workflow" role="button" aria-expanded="false" aria-controls="denials-workflow">🗂️ Denials</a></h5>
     <div class="card card-body collapse" id="denials-workflow">
-      <div class="card card-body">
+    
         <p><strong>Denials Workflow</strong></p>
-      </div>
       <div class="card-body" id="gif-workflow">
         <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_31_lddcgs.png">
       </div>
@@ -309,7 +351,7 @@
   </div>
     
 <div class="card card-body" id="insurance-review">
-  <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#insurance-review-workflow" role="button" aria-expanded="false" aria-controls="insurance-review-workflow">🗂️ Insurance Review</a></h5>
+  <h5 id="list"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#insurance-review-workflow" role="button" aria-expanded="false" aria-controls="insurance-review-workflow">🗂️ Insurance Review</a></h5>
     <div class="card card-body collapse" id="insurance-review-workflow">
   
       <p><strong>Walkthrough: Primary Claim Resubmission</strong></p>
@@ -396,28 +438,26 @@
   <div class="container-xl collapse" id="payments">
     <h3 id="sub-title"><strong>Workflow Guide: 📂 Payments</strong></h3>
 
-  <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#new-payment-workflow" role="button" aria-expanded="false" aria-controls="new-payment-workflow">🗂️ New Payment</a></h5>
+  <div class="card card-body">
+    <h5 id="list"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#new-payment-workflow" role="button" aria-expanded="false" aria-controls="new-payment-workflow">🗂️ New Payment</a></h5>
     <div class="container-lg collapse" id="new-payment-workflow">
 
     <p><strong>Workflow Guide - Posting Utility: 🗂️ New Payment</strong></p>
-      <div class="card card-body">
-        <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#insurance" role="button" aria-expanded="false" aria-controls="insurance">🧾 Insurance</a></h5>
+
+    <div class="card card-body">
+      <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#insurance" role="button" aria-expanded="false" aria-controls="insurance">🧾 Insurance</a></h5>
         <div class="card card-body collapse" id="insurance">
-          <div class="card card-body">
             <p><strong>Workflow Guide - Posting Utility: 🧾 Insurance Payments</strong></p>
-          </div>
-          <div class="card-body" id="gif-workflow">
+        <div class="card-body" id="gif-workflow">
             <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_29_qlujkw.png">
-          </div>
         </div>
       </div>
+    </div>
 
       <div class="card card-body">
         <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#patient" role="button" aria-expanded="false" aria-controls="patient">🧾 Patient</a></h5>
         <div class="card card-body collapse" id="patient">
-          <div class="card card-body">
             <p><strong>Workflow Guide - Posting Utility: 🧾 Patient Payments</strong></p>
-          </div>
           <div class="card-body" id="gif-workflow">
             <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_29_qlujkw.png">
           </div>
@@ -427,9 +467,7 @@
       <div class="card card-body">
         <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#client" role="button" aria-expanded="false" aria-controls="client">🧾 Client</a></h5>
         <div class="card card-body collapse" id="client">
-          <div class="card card-body">
             <p><strong>Workflow Guide - Posting Utility: 🧾 Client Payments</strong></p>
-          </div>
           <div class="card-body" id="gif-workflow">
             <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_28_dc5ppp.png">
           </div>
@@ -437,13 +475,12 @@
       </div>
 
 </div>
+</div>
 
   <div class="card card-body">
-    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#incomplete-payments-workflow" role="button" aria-expanded="false" aria-controls="incomplete-payments-workflow">🗂️ Incomplete Payments</a></h5>
-    <div class="card card-body collapse" id="incomplete-payments-workflow">
-      <div class="card card-body">
+    <h5 id="list"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#incomplete-payments-workflow" role="button" aria-expanded="false" aria-controls="incomplete-payments-workflow">🗂️ Incomplete Payments</a></h5>
+      <div class="card card-body collapse" id="incomplete-payments-workflow">
         <p><strong>Workflow Guide - 🗂️ Incomplete Payments</strong></p>
-      </div>
       <div class="card-body" id="gif-workflow">
         <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_28_dc5ppp.png">
       </div>
@@ -451,11 +488,9 @@
   </div>
 
   <div class="card card-body">
-    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#payment-manifest-queue-workflow" role="button" aria-expanded="false" aria-controls="payment-manifest-queue-workflow">🗂️ Payment Manifest Queue</a></h5>
+    <h5 id="list"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#payment-manifest-queue-workflow" role="button" aria-expanded="false" aria-controls="payment-manifest-queue-workflow">🗂️ Payment Manifest Queue</a></h5>
      <div class="card card-body collapse" id="payment-manifest-queue-workflow">
-      <div class="card card-body">
         <p><strong>Workflow Guide - 🗂️ Payment Manifest Queue</strong></p>
-      </div>
       <div class="card-body" id="gif-workflow">
         <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672381013/LL_doc_27_uv8h8l.png">
       </div>
@@ -463,11 +498,9 @@
   </div>
 
   <div class="card card-body">
-    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#payment-manifest-log-workflow" role="button" aria-expanded="false" aria-controls="payment-manifest-log-workflow">🗂️ Payment Manifest Log</a></h5>
+    <h5 id="list"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#payment-manifest-log-workflow" role="button" aria-expanded="false" aria-controls="payment-manifest-log-workflow">🗂️ Payment Manifest Log</a></h5>
     <div class="card card-body collapse" id="payment-manifest-log-workflow">
-      <div class="card card-body">
         <p><strong>Workflow Guide - 🗂️ Payment Manifest Log</strong></p>
-      </div>
       <div class="card-body" id="gif-workflow">
         <img id="gif" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672382832/LL_doc_28_dc5ppp.png">
       </div>
@@ -480,11 +513,11 @@
   <div class="container-xl collapse" id="reports">
     <h3 id="sub-title"><strong>Workflow Guide: 📂 Reports</strong></h3>
 
-  <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounter" role="button" aria-expanded="false" aria-controls="encounter">🗂️ Encounters</a></h5>
+  <h5 id="list"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounter" role="button" aria-expanded="false" aria-controls="encounter">🗂️ Encounters</a></h5>
     <div class="container-lg collapse" id="encounter">
     
       <div class="card card-body">
-        <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounter-stat-workflow" role="button" aria-expanded="false" aria-controls="encounter-stat-workflow">🔍 Encounter Stat</a></h5>
+        <h5 id="list"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounter-stat-workflow" role="button" aria-expanded="false" aria-controls="encounter-stat-workflow">🔍 Encounter Stat</a></h5>
           <div class="card card-body collapse" id="encounter-stat-workflow">
             <div class="card card-body">
               <p><strong>Workflow Guide - 🔍 Encounter Stat </strong></p>
@@ -496,7 +529,7 @@
         </div>
 
       <div class="card card-body">
-        <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounter-search-workflow" role="button" aria-expanded="false" aria-controls="encounter-search-workflow">🔍 Encounter Search</a></h5>
+        <h5 id="list"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#encounter-search-workflow" role="button" aria-expanded="false" aria-controls="encounter-search-workflow">🔍 Encounter Search</a></h5>
           <div class="card card-body collapse" id="encounter-search-workflow">
             <div class="card card-body">
               <p><strong>Workflow Guide - 🔍 Encounter Search</strong></p>
@@ -509,11 +542,11 @@
 
 </div>
 
-<h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpts" role="button" aria-expanded="false" aria-controls="cpts">🗂️ CPTs</a></h5>
+<h5 id="list"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpts" role="button" aria-expanded="false" aria-controls="cpts">🗂️ CPTs</a></h5>
   <div class="container-lg collapse" id="cpts">
 
   <div class="card card-body">
-    <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-stat-workflow" role="button" aria-expanded="false" aria-controls="cpt-stat-workflow">🔍 CPT Stat</a></h5>
+    <h5 id="list"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-stat-workflow" role="button" aria-expanded="false" aria-controls="cpt-stat-workflow">🔍 CPT Stat</a></h5>
       <div class="card card-body collapse" id="cpt-stat-workflow">
         <div class="card card-body">
           <p><strong>Workflow Guide -  🔍 CPT Stat</strong></p>
@@ -525,7 +558,7 @@
     </div>
 
   <div class="card card-body">
-    <h5 class="card-subtitle mb-2"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-search-workflow" role="button" aria-expanded="false" aria-controls="cpt-search-workflow">🔍 CPT Search</a></h5>
+    <h5 id="list"> <a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#cpt-search-workflow" role="button" aria-expanded="false" aria-controls="cpt-search-workflow">🔍 CPT Search</a></h5>
       <div class="card card-body collapse" id="cpt-search-workflow">
         <div class="card card-body">
           <p><strong>Workflow Guide - 🔍 CPT Search</strong></p>
@@ -542,7 +575,7 @@
   <div class="container-lg collapse" id="timeline-events">
 
   <div class="card card-body">
-    <h5 class="card-subtitle mb-2"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#event-stats-workflow" role="button" aria-expanded="false" aria-controls="event-stats-workflow">🔍 Event Stats</a></h5>
+    <h5 id="list"><a class="nav-link dropdown-toggle" id="sub-link" data-toggle="collapse" href="#event-stats-workflow" role="button" aria-expanded="false" aria-controls="event-stats-workflow">🔍 Event Stats</a></h5>
       <div class="card card-body collapse" id="event-stats-workflow">
         <div class="card card-body">
           <p><strong>Workflow Guide - 🔍 Event Stats</strong></p>
