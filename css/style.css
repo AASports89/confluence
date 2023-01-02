@@ -24,6 +24,7 @@ body {
 
 #nav-bar {
   background-image: url("https://res.cloudinary.com/dhqsixgmo/image/upload/v1672266559/confluence-logo_hoaoba.png");
+  width: 100%;
 }
 
 #nav-header {
@@ -83,6 +84,22 @@ body {
 
 #nav-menu {
   margin-top: 2%;
+}
+
+#spaces-link {
+  color: whitesmoke;
+}
+
+#spaces-link:hover {
+  background-color: rgb(1, 1, 80);
+  margin: 1%;
+}
+
+#create-link {
+  color: whitesmoke;
+  padding-left: 1%;
+  padding-right: 1%;
+  border-radius: 0.25em;
 }
 
 #rcm-guide:hover {
