@@ -27,6 +27,7 @@
       <img id="conf-link" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672266802/img_522985_vybzoz.png" width="50" height="50" alt="Confluence-Link" loading="lazy">
       <img id="conf-logo" src="https://res.cloudinary.com/dhqsixgmo/image/upload/v1672264041/confluence-logo_x2rqop.png" width="300" height="90" alt="Confluence" loading="lazy">
     </a>
+    <form class="form-inline" style="width: 55%">
     <div class="dropdown">
       <a class="navbar-brand dropdown-toggle" href="#spaces" role="button" id="spaces-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Spaces
@@ -41,13 +42,23 @@
     <a class="navbar-brand btn-primary" href="https://support.ligolab.com:8090/pages/resumedraft.action?draftId=179766269&draftShareId=69b9134b-81fb-4832-975f-afb8489902be&" role="button" id="create-link">
       Create
     </a>
+    </form>
     <form class="form-inline">
       <button class="btn btn-outline-success my-2 my-sm-0" id="search-button" type="submit"><i class="fa-solid fa-magnifying-glass" id="magnify"></i></button>
       <input id="search-bar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+    <div class="btn-group dropleft">
+      <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i id="user-icon" class="fa-solid fa-circle-user"></i>
+      </a>
+      <div class="dropdown-menu" id="user-link-drop" aria-labelledby="user-links">
+        <a class="dropdown-item" href="./login.html"><i id="login-icon" class="fa-solid fa-arrow-right-from-bracket"></i> Login</a>
+        <a class="dropdown-item" href="./logout.html"><i id="logout-icon" class="fa-solid fa-circle-xmark"></i> Logout</a>
+      </div>
+    </div>
     </form>
   </nav>
 </header>
-
 <main>
 
 <div class="float-left" id="float-left">
