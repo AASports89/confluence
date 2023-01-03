@@ -102,6 +102,19 @@ body {
   border-radius: 0.25em;
 }
 
+#user-icon {
+  color: slategrey;
+  font-size: 165%;
+}
+
+#login-icon {
+  color: slategrey;
+}
+
+#logout-icon {
+  color: red;
+}
+
 #rcm-guide:hover {
   cursor: pointer;
   color: black;
